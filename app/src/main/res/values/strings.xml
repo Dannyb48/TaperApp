@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Taper</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_date">Date:</string>
+    <string name="search_time">Time:</string>
+    <string name="search_location">Location (zip code):</string>
+    <string name="search_button">Find a Chair</string>
+    <string name="title_activity_search_results">SearchResultsActivity</string>
+    <string name="sp_file_name">SearchParameters</string>
+    <string name="title_activity_place_detail">PlaceDetailActivity</string>
+    <string name="title_section1">Details</string>
+    <string name="title_section2">Reserve</string>
+    <string name="title_section3">Reviews</string>
+    <string name="submit_button">Submit</string>
+    <string name="title_activity_reservation_form">ReservationFormActivity</string>
+    <string name="form_name">Name: </string>
+    <string name="form_email">Email: </string>
+    <string name="form_phone">Phone: </string>
+    <string name="confirm_button">Confirm</string>
+
+</resources>

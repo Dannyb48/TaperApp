@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.brandeis.project.taper.app" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_web"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainSearchActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchResultsActivity"
+            android:label="@string/title_activity_search_results"
+            android:parentActivityName=".MainSearchActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.brandeis.project.taper.app.MainSearchActivity" />
+        </activity>
+        <activity
+            android:name=".PlaceDetailActivity"
+            android:label="@string/title_activity_place_detail"
+            android:parentActivityName=".SearchResultsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.brandeis.project.taper.app.SearchResultsActivity" />
+        </activity>
+        <activity
+            android:name=".ReservationFormActivity"
+            android:label="@string/title_activity_reservation_form"
+            android:parentActivityName=".PlaceDetailActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.brandeis.project.taper.app.PlaceDetailActivity" />
+        </activity>
+    </application>
+
+</manifest>
